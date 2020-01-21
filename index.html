@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+	<meta charset="UTF-8">
+	<title>Brotherhood</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+		<script src="http://code.jquery.com/jquery-latest.js"></script>
+
+	<script>
+    $(document).ready(function() {
+        $('#tactical>a').click(function() {
+
+            $('#sample').css('background-color', 'orange');
+
+        });
+         $('#highland>a').click(function() {
+
+            $('#sample').css('background-color', 'blue');
+
+        });
+          $('#simple>a').click(function() {
+
+            $('#sample').css('background-color', 'grey');
+
+        });
+});
+</script>
+<style>
+      #map {
+        height: 100vh;
+      }
+    
+</style>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="page">
+	<div class="container-fluid head">
+		<header class="container">
+			<div class="col-xs-6 col-md-5 logo">
+				<img class="img-responsive row" src="img/logo.png">
+			</div>
+			<div class="col-xs-3 col-md-3 col-lg-3 lang">
+				<a href="#" class="col-xs-12 col-md-4">Рус</a>
+				<a href="#" class="col-xs-12 col-md-4">Укр</a>
+				<a href="#" class="col-xs-12 col-md-4">Eng</a>
+			</div>
+			<div class="col-xs-3 col-md-4 col-lg-3 pull-right basket">
+				<a href>
+					<div class="col-md-4 wrapper_pic">
+						<img src="img/basket.png" alt="" class="basket_pic">
+					</div>
+					<div class="col-md-8 hidden-xs hidden-sm">Кошик: <span>27 товарів</span>
+					</div>
+				</a>
+			</div>
+		</header>
+	</div>
+<nav class="navbar navbar-default" role="navigation">
+	<div class="container-fluid">
+    	<div class="container-fluid">
+    	<div class="container">
+    	<div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+               </button>
+    	</div>
+        <div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
+            <ul class="nav navbar-nav col-lg-12">
+                <li class="col-lg-2"><a href="#">НОВИНИ</a></li>
+                <li class="col-lg-2"><a href="#">МАГАЗИН</a></li>
+                <li class="col-lg-2"><a href="#">ДИЛЕРИ</a></li>
+                <li class="col-lg-2"><a href="#">ДОСТАВКА</a></li>
+                <li class="col-lg-2"><a href="#">ПРО НАС</a></li>
+                <li class="col-lg-2"><a href="#">КОНТАКТИ</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+	</div><!-- /.container-fluid -->
+</nav>
+	<div class="container-fluid">
+		<div class="container series">
+			<div class="col-xs-4 col-lg-2 col-lg-offset-3" id="tactical"><a href="#">TACTICAL</a></div>
+			<div class="col-xs-4 col-lg-2" id="highland"><a href="#">HIGHLAND</a></div>
+			<div class="col-xs-4 col-lg-2" id="simple"><a href="#">SIMPLE</a></div>
+		</div>
+	</div>
+	<div class="container-fluid clearfix" id="sample">
+		<div class="container">
+			<div style="margin-bottom: 10px;" class="col-xs-12 col-lg-4">
+				<h3>Серія</h3>
+				<h2>Tactical</h2>
+				<div><strong>Власна розробка</strong> українських військових, що увібрала в себе <strong>найкраще</strong> з нині можливого:</div>
+				<div class="checkmark">якість тканин і пошиву</div>
+				<div>зручність крою</div>
+				<div>функціональність у використанні</div>
+				<a href="#"><span>Перейти до каталогу   </span></a>
+			</div>
+			<div class="visible-lg col-lg-8 pic_sample row">
+				<div>
+					<img class="img-responsive" src="img/view_series.png" alt="">
+					<img class="img-responsive scale" src="img/scale.png" alt="">
+					<div></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid" id="wrapper_carousel">
+		<div class="container carousel">
+			<div id="carousel-example-generic" class="carousel slide visible-lg" data-ride="carousel">
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner">
+				    <div class="item active">
+				       <div class="carousel-caption">
+				      	<h2>Тканина</h2>
+				      	<div>Тип тканини: <span>Кордура</span></div>
+				      	<p>Тканина кордура - нейлонова водонепроникна тканина з підвищеною стійкістю до будь механічних впливів. PU просочення і особливе плетіння ниток забезпечують повну водоніпроніцаемость. Тканина стійка до перепадів температур і впливу ультрафіолету.</p>
+				      	<div><span>Переваги:</span>  вологостійкість, вогнестійкість</div>
+				      	<div>Доступні кольори:</div>
+				      	<ul>
+				      		<li><img src="img/first_cloth.png"></li>
+				      		<li><img src="img/second_cloth.png"></li>
+				      		<li><img src="img/third_cloth.png"></li>
+				      		<li><img src="img/fourth_cloth.png"></li>
+				      		<li><img src="img/fifth_cloth.png"></li>
+				      		<li><img src="img/sixth_cloth.png"></li>
+				      	</ul>
+				      	<a href="#"><span>Перейти до каталогу   </span></a>
+				      </div>
+				 	</div>
+				    <div class="item">
+				    	<div class="carousel-caption">
+					      	<h2>Тканина</h2>
+					      	<div>Тип тканини: <span>Дюспо</span></div>
+					      	<p>Тканина дюспо - це штучний матеріал, який має полотняне переплетення поліамідних ниток. Матерія відрізняється своєю поширеністю і затребуваністю, а пов'язано це з високими технічними і експлуатаційними характеристиками.
+					      	</p>
+					      	<div><span>Переваги:</span>  вологостійкість, вогнестійкість</div>
+					      	<div>Доступні кольори:</div>
+					      	<ul>
+					      		<li><img src="img/first_cloth.png"></li>
+					      		<li><img src="img/second_cloth.png"></li>
+					      		<li><img src="img/third_cloth.png"></li>
+					      		<li><img src="img/fourth_cloth.png"></li>
+					      		<li><img src="img/fifth_cloth.png"></li>
+					      		<li><img src="img/sixth_cloth.png"></li>
+					      	</ul>
+					      	<a href="#"><span>Перейти до каталогу   </span></a>
+				    	</div>
+				 	</div>
+				 	 <div class="item">
+				    	<div class="carousel-caption">
+					      	<h2>Тканина</h2>
+					      	<div>Тип тканини: <span>Дуплекс</span></div>
+					      	<p>Дуплекс (Duplex) являє собою щільне з'єднання тканого полотна з синтетичних волокон Duspa і трикотажної тканини. Лицьовою поверхнею виступає основа з нейлону, а виворітна - пластична тканина.
+					      	</p>
+					      	<div><span>Переваги:</span>  вологостійкість, вогнестійкість</div>
+					      	<div>Доступні кольори:</div>
+					      	<ul>
+					      		<li><img src="img/first_cloth.png"></li>
+					      		<li><img src="img/second_cloth.png"></li>
+					      		<li><img src="img/third_cloth.png"></li>
+					      		<li><img src="img/fourth_cloth.png"></li>
+					      		<li><img src="img/fifth_cloth.png"></li>
+					      		<li><img src="img/sixth_cloth.png"></li>
+					      	</ul>
+					      	<a href="#"><span>Перейти до каталогу   </span></a>
+				    	</div>
+				 	</div>
+		
+				  <!-- Controls -->
+				  <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+				  </a>
+				  <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+				  </a>
+				</div>
+			</div>
+		</div>
+	</div>
+<div class="container-fluid white">
+	<div class="container how">Як ми працюємо</div>
+	<div class="container idea">
+		<div class="col-xs-1">1</div>
+		<div class="col-lg-5 visible-lg pic">
+			<div></div>
+			<img src="img/idea.png">
+		</div>
+		<div class="col-xs-11 col-lg-6" id="text_idea">
+			<div>спочатку <span>Ідея</span></div>
+			<div>Усі моделі розробляються українськими  військовими, тому моделі досконалі та зручні</div>
+			<div>Кожен елемент моделі знаходиться на своєму функціональному місці, для нього підібраний найкращий крій та матеріали, використовується найдосконаліша фурнітура</div>
+			<div>Ідея постійно вдосконалюється, враховуються всі помилки, завдяки налагодженому діалогу з реальними користувачами форми</div>
+		</div>
+	</div>
+</div>
+<div class="container-fluid grey">
+	<div class="container create">
+		<div class="col-xs-1">2</div>
+		<div class="col-lg-5 visible-lg pic_create pull-right">
+			<div></div>
+			<img src="img/create.png">
+		</div>
+		<div class="col-xs-11 col-lg-5 pull-right" id="text_create">
+			<div>Потім <span>створення речі</span></div>
+			<div>Виробництво налагоджене на власних виробничих потужностях, а отже якість виробу контролюється нами особисто</div>
+			<div>Для зменшення помилок через людський фактор, всі процеси максимально автоматизовані</div>
+			<div>Кожен вироблений зразок гарантованно проходить контроль якості. Помилки виключені</div>
+		</div>
+	</div>
+</div>
+<div class="container-fluid white">
+	<div class="container test">
+		<div class="col-xs-1">3</div>
+		<div class="col-lg-5 visible-lg pic">
+			<div></div>
+			<img src="img/test.png">
+		</div>
+		<div class="col-xs-11 col-lg-5" id="text_test">
+			<div>І нарешті <span>Тестування</span></div>
+			<div>Одяг тестується як на полігонах, так і у реальних умовах АТО</div>
+			<div>Постійно збирається статистика відгуків та побажань</div>
+			<div>Всі доцільні відгуки користувачів нашої продукції завжди трансформуються у нові ідеї</div>
+		</div>
+	</div>
+</div>
+<div class="container-fluid dillers">
+	<div class="container">Наші дилери</div>
+</div>
+<div class="container-fluid">
+	<div id="map"></div>
+	     <script>
+	       function initMap() {
+	         // Styles a map in night mode.
+	         var map = new google.maps.Map(document.getElementById('map'), {
+	           center: {lat: 49.0139, lng: 31.2858},
+	           zoom: 6,
+	           styles: [
+	     {
+	         "featureType": "all",
+	         "elementType": "labels.text.fill",
+	         "stylers": [
+	             {
+	                 "saturation": 36
+	             },
+	             {
+	                 "color": "#000000"
+	             },
+	             {
+	                 "lightness": 40
+	             }
+	         ]
+	     },
+	     {
+	         "featureType": "all",
+	         "elementType": "labels.text.stroke",
+	         "stylers": [
+	             {
+	                 "visibility": "on"
+	             },
+	             {
+	                 "color": "#000000"
+	             },
+	             {
+	                 "lightness": 16
+	             }
+	         ]
+	     },
+	     {
+	         "featureType": "all",
+	         "elementType": "labels.icon",
+	         "stylers": [
+	             {
+	                 "visibility": "on"
+	             }
+	         ]
+	     },
+	     {
+	         "featureType": "administrative",
+	         "elementType": "geometry.fill",
+	         "stylers": [
+	             {
+	                 "color": "#000000"
+	             },
+	             {
+	                 "lightness": 20
+	             }
+	         ]
+	     },
+	     {
+	         "featureType": "administrative",
+	         "elementType": "geometry.stroke",
+	         "stylers": [
+	             {
+	                 "color": "#000000"
+	             },
+	             {
+	                 "lightness": 17
+	             },
+	             {
+	                 "weight": 1.2
+	             }
+	         ]
+	     },
+	     {
+	         "featureType": "landscape",
+	         "elementType": "geometry",
+	         "stylers": [
+	             {
+	                 "color": "#000000"
+	             },
+	             {
+	                 "lightness": 20
+	             }
+	         ]
+	     },
+	     {
+	         "featureType": "poi",
+	         "elementType": "geometry",
+	         "stylers": [
+	             {
+	                 "color": "#000000"
+	             },
+	             {
+	                 "lightness": 21
+	             }
+	         ]
+	     },
+	     {
+	         "featureType": "road.highway",
+	         "elementType": "geometry.fill",
+	         "stylers": [
+	             {
+	                 "color": "#000000"
+	             },
+	             {
+	                 "lightness": 17
+	             }
+	         ]
+	     },
+	     {
+              featureType: 'administrative.locality',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#c0c0c0'}]
+            },
+	     {
+	         "featureType": "road.highway",
+	         "elementType": "geometry.stroke",
+	         "stylers": [
+	             {
+	                 "color": "#000000"
+	             },
+	             {
+	                 "lightness": 29
+	             },
+	             {
+	                 "weight": 0.2
+	             }
+	         ]
+	     },
+	     {
+	         "featureType": "road.arterial",
+	         "elementType": "geometry",
+	         "stylers": [
+	             {
+	                 "color": "#000000"
+	             },
+	             {
+	                 "lightness": 18
+	             }
+	         ]
+	     },
+	     {
+	         "featureType": "road.local",
+	         "elementType": "geometry",
+	         "stylers": [
+	             {
+	                 "color": "#000000"
+	             },
+	             {
+	                 "lightness": 16
+	             }
+	         ]
+	     },
+	     {
+	         "featureType": "transit",
+	         "elementType": "geometry",
+	         "stylers": [
+	             {
+	                 "color": "#000000"
+	             },
+	             {
+	                 "lightness": 19
+	             }
+	         ]
+	     },
+	     {
+        "featureType": "administrative.country",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "saturation": "100"
+            },
+            {
+                "color": "#f7f7f7"
+            },
+            {
+                "lightness": "-47"
+            }
+        ]
+    },
+	     {
+	         "featureType": "water",
+	         "elementType": "geometry",
+	         "stylers": [
+	             {
+	                 "color": "#000000"
+	             },
+	             {
+	                 "lightness": 17
+	             }
+	         ]
+	     }
+	 ]
+
+	         });
+	       addMarker({lat: 50.450001, lng: 30.523333});
+	       addMarker({lat: 49.988358, lng: 36.232845});
+	       addMarker({lat: 51.50551, lng: 31.28487});
+	       addMarker({lat: 48.45, lng: 34.98333});
+	       addMarker({lat: 48.023, lng: 37.80224});
+	       addMarker({lat: 49.42854, lng: 32.06207});
+	       addMarker({lat: 49.59373, lng: 34.54073});
+	       addMarker({lat: 49.06802, lng: 33.42041});
+	       addMarker({lat: 50.9216, lng: 34.80029});
+	       addMarker({lat: 48.56705, lng: 39.31706});
+	       addMarker({lat: 47.82289, lng: 35.19031});
+	       addMarker({lat: 47.09514, lng: 37.54131});
+	       addMarker({lat: 48.5132, lng: 32.2597});
+	       addMarker({lat: 47.90966, lng: 33.38044});
+	       addMarker({lat: 46.96591, lng: 31.9974});
+	       addMarker({lat: 46.65581, lng: 32.6178});
+	       addMarker({lat: 46.47747, lng: 30.73262});
+	       addMarker({lat: 50.26487, lng: 28.67669});
+	       addMarker({lat: 49.23278, lng: 28.48097});
+	       addMarker({lat: 48.29149, lng: 25.94034});
+	       addMarker({lat: 49.83826, lng: 24.02324});
+	       function addMarker(coordinates) {
+	       	var marker = new google.maps.Marker({
+	       		position: coordinates,
+	       		map: map,
+	       		icon: 'img/map_marker.png'
+	
+	       	})
+	       }
+	       }
+
+	     </script>
+	     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRJXdcV1pdRmgaK8gGqdJtLTkXbp8q-R4&callback=initMap"
+	     async defer></script>
+</div>
+<footer class="container-fluid">
+	<div class="container">
+		<div class=" col-xs-12 col-md-6 col-lg-4 footer_logo">
+			<img src="img/logo.png">
+		</div>
+		<div class="col-xs-12 col-md-6 col-lg-4 contact">
+			<div>sales@brother-hood.com.ua</div>
+			<div>ст.м. "Либідська"</div>
+			<div>м.Київ, вул. К. Малевича, 861</div>
+		</div>
+		<div class=" col-xs-12 col-lg-4 call pull-right">
+			<div class="col-xs-12 col-md-4 col-lg-12"> Замовити зворотній зв'язок</div>
+			<div class="col-xs-12 col-md-4 col-lg-12">+38 (050) <span>317-64-44</span></div>
+			<div class="col-xs-12 col-md-4  col-lg-12">+38 (067) <span>325-57-53</span></div>
+		</div>
+	</div>
+</footer>
+<div class="fixed_block">
+	<ul>
+		<li>
+			<a href="#" data-placement="left" data-toggle="tooltip" title="Замовити зворотній зв'язок">
+				<div class="tooltip"  role="tooltip">
+			    <div class="tooltip-inner">
+			     Замовити зворотній дзвінок
+			    </div>
+			    </div></a>
+		</li>
+		<li>
+			<a href="#" data-placement="left" data-toggle="tooltip" title="Отримати подарунок">
+				<div class="tooltip" role="tooltip">
+			    <div class="tooltip-inner">
+			     Отримати подарунок
+			    </div>
+			</div></a>
+		</li>
+		<li>
+			<a href="#" data-placement="left" data-toggle="tooltip" title="Відправити нам листа">
+				<div class="tooltip" role="tooltip">
+			    <div class="tooltip-inner">
+			     Відправити нам листа
+			    </div>
+			</div></a>
+		</li>
+	</ul>
+</div>	
+		<script>
+    $(function() {
+        $('[data-toggle="tooltip"]').tooltip();
+});
+    
+</script>
+</body>
+</html>
